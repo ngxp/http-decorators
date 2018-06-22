@@ -1,0 +1,50 @@
+<div class="container">
+    <h1>Rest-Decorators...</h1>
+    <h2>@Get Property-Decorator</h2>
+    <div class="row mb-2">
+        <div class="jumbotron">
+            <code>
+                {{
+                    "@Get({ 
+                        url: &#39;https://reqres.in/api/users/2&#39; 
+                    })"
+                }}
+            </code>
+            <div>{{(user | async) | json}}</div>
+        </div>
+    </div>
+    <div class="row mb-2">
+        <div class="jumbotron">
+            <code>
+                        {{
+                            "@Get({ 
+                                url: &#39;https://reqres.in/api/users&#39; 
+                            })"
+                        }}
+                    </code>
+            <div>{{(list | async) | json}}</div>
+        </div>
+    </div>
+    <h2>@Get Method-Decorator</h2>
+    <div class="row mb-2">
+        <div class="jumbotron">
+            <code>
+                            
+                {{
+                    "@Get({ 
+                        url: &#39;https://reqres.in/api/users/${id}&#39; 
+                    })"
+                }}
+            </code>
+            <div class="row">
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="basic-addon1">{{ "${id}" }}</span>
+                    </div>
+                    <input [(ngModel)]="id" type="text" class="form-control" placeholder="${id}" aria-label="${id}" aria-describedby="basic-addon1">
+                </div>
+            </div>
+            <div>{{(getById(id) | async) | json}}</div>
+        </div>
+    </div>
+</div>

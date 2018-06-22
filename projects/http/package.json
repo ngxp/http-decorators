@@ -1,0 +1,21 @@
+{
+  "name": "http-decorators",
+  "version": "0.0.1-alpha",
+  "description": "A Angular HttpClient decorator library",
+  "peerDependencies": {
+    "@angular/common": "^6.0.0-rc.0 || ^6.0.0",
+    "@angular/core": "^6.0.0-rc.0 || ^6.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ngx-patterns/http-decorators.git"
+  },
+  "homepage": "https://github.com/ngx-patterns/http-decorators",
+  "keywords": [
+    "angular",
+    "httpclient",
+    "decorator"
+  ],
+  "author": "jarmee",
+  "license": "MIT"
+}
