@@ -2,8 +2,6 @@ import { Component, ChangeDetectionStrategy } from '@angular/core';
 import { Get, UrlParam } from '@ngx-patterns/http';
 import { Observable, empty } from 'rxjs';
 import { User, List } from './user.model';
-import { HttpClient } from '@angular/common/http';
-
 
 @Component({
   selector: 'app-root',
@@ -18,17 +16,17 @@ export class AppComponent {
   @Get({
     url: 'https://reqres.in/api/users/2'
   })
-  user: Observable<User>
+  user: Observable<User>;
 
   @Get({
     url: 'https://reqres.in/api/users'
   })
-  list: Observable<List<User>>
+  list: Observable<List<User>>;
 
   @Get({
     url: 'https://reqres.in/api/users/${id}'
   })
-  getById(@UrlParam('id') id: number) : Observable<User> {
+  getById(@UrlParam('id') id: number): Observable<User> {
     return empty();
   }
 }
