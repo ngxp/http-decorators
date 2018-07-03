@@ -2,7 +2,7 @@
   "name": "http-decorators",
   "author": "jarmee",
   "repository": "https://github.com/ngx-patterns/http-decorators",
-  "keywords":[
+  "keywords": [
     "decorators",
     "angular",
     "http",
@@ -17,7 +17,7 @@
     "lint": "ng lint",
     "e2e": "ng e2e",
     "build-ci": "ng build http --prod",
-    "test-ci": "jest --coverage --runInBand"
+    "test-ci": "jest --coverage --runInBand --setupTestFrameworkScriptFile=./setUpJest.ts"
   },
   "private": false,
   "dependencies": {
@@ -45,21 +45,11 @@
     "typescript": "~2.7.2",
     "@angular/cli": "~6.0.1",
     "@angular/language-service": "^6.0.0",
-    "@types/jasmine": "~2.8.6",
-    "@types/jasminewd2": "~2.0.3",
     "@types/node": "~8.9.4",
     "codelyzer": "~4.2.1",
-    "jasmine-core": "~2.99.1",
-    "jasmine-spec-reporter": "~4.2.1",
-    "karma": "~1.7.1",
-    "karma-chrome-launcher": "~2.2.0",
-    "karma-coverage-istanbul-reporter": "~1.4.2",
-    "karma-jasmine": "~1.1.1",
-    "karma-jasmine-html-reporter": "^0.2.2",
-    "protractor": "~5.3.0",
     "ts-node": "~5.0.1",
     "tslint": "~5.9.1",
-    "jest": "^22.0.0",
+    "jest": "22.4.0",
     "jest-preset-angular": "5.2.2"
   },
   "jest": {
