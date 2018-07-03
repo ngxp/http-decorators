@@ -7,8 +7,8 @@ before_script:
    - npm install -g --silent @angular/cli
 
 script: 
-   - npm test
    - ng build -prod
+   - npm test
 
 notifications:
   email: # only receive email when the build status changes (someone broke the build!) 
