@@ -1,6 +1,14 @@
 {
   "name": "http-decorators",
-  "version": "0.0.0",
+  "author": "jarmee",
+  "repository": "https://github.com/ngx-patterns/http-decorators",
+  "keywords":[
+    "decorators",
+    "angular",
+    "http",
+    "http-client"
+  ],
+  "version": "0.0.0-alpha",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -56,9 +64,6 @@
   },
   "jest": {
     "preset": "jest-preset-angular",
-    "projects": [
-      "<rootDir>"
-    ],
     "setupTestFrameworkScriptFile": "./setupJest.ts",
     "moduleNameMapper": {
       "^src/(.*)": "<rootDir>/src/$1",
