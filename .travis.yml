@@ -8,6 +8,7 @@ before_script:
 
 script: 
    - npm test
+   - ng build -prod
 
 notifications:
   email: # only receive email when the build status changes (someone broke the build!) 
