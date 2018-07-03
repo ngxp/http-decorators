@@ -1,8 +1,10 @@
 export const DECORATORS = '__decorators__';
 
-export interface GetConfig {
+export interface HttpConfig {
     url: string;
 }
+export interface GetConfig extends HttpConfig {}
+export interface PutConfig extends HttpConfig{}
 
 export interface UrlConfing {
     name: string;
@@ -10,7 +12,9 @@ export interface UrlConfing {
 }
 
 export enum DecoratorTypes {
-    UrlParam = 'Param',
-    Get = 'Get',
+    UrlParam = 'UrlParam',
+    PayloadParam = 'PayloadParam',
+    Get = 'GetProp',
     GetMethod = 'GetMethod',
+    PutMehtod = 'PutMethod'
 }
