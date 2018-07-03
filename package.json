@@ -54,6 +54,13 @@
   },
   "jest": {
     "preset": "jest-preset-angular",
-    "setupTestFrameworkScriptFile": "<rootDir>/setupJest.ts"
+    "setupTestFrameworkScriptFile": "<rootDir>/setupJest.ts",
+    "moduleNameMapper": {
+      "^src/(.*)": "<rootDir>/src/$1",
+      "^app/(.*)": "<rootDir>/src/app/$1",
+      "^assets/(.*)": "<rootDir>/src/assets/$1",
+      "^environments/(.*)": "<rootDir>/src/environments/$1",
+      "^@ngx-patterns/(.*)": "<rootDir>/projects/$1/src"
+    }
   }
 }
