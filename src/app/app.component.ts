@@ -26,7 +26,7 @@ export class AppComponent {
   @Get({
     url: 'https://reqres.in/api/users/${id}'
   })
-  getById(@UrlParam('id') id: number): Observable<User> {
+  getById(@UrlParam('id') id: string): Observable<User> {
     return empty();
   }
 }

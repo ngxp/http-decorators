@@ -7,7 +7,7 @@ before_script:
    - npm install -g --silent @angular/cli
 
 script: 
-   - ng build --prod
+   - npm run build-ci
 
 notifications:
   email: # only receive email when the build status changes (someone broke the build!) 
