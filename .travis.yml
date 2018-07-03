@@ -9,6 +9,7 @@ before_script:
    - npm install -g --silent @angular/cli
 
 script: 
+   - npm run test-ci
    - npm run build-ci
 
 notifications:
