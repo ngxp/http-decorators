@@ -1,7 +1,9 @@
 language: node_js
 
 node_js:
-   - node
+  - "10"
+
+sudo: false
 
 before_script: 
    - npm install -g --silent @angular/cli
