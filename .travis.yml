@@ -1,22 +1,18 @@
 language: node_js
-
 node_js:
-  - "10"
-
+- '10'
 sudo: false
-
-before_script: 
-   - npm install -g --silent @angular/cli
-   - ls
-
-script: 
-   - npm run test-ci
-   - npm run build-ci
-
+before_script:
+- npm install -g --silent @angular/cli
+- ls
+script:
+- npm run test-ci
+- npm run build-ci
 notifications:
-  email: # only receive email when the build status changes (someone broke the build!) 
+  email:
     on_failure: change
     on_success: change
   slack:
     on_success: always
-    secure: SXXbjDxEIBmsj/MEc32cSN+ZqK7pVKsubxr2dxCC/ifYE+lkDvUcy4X6b02fk5Bm3WlA7x/QMfpA5FNVLcxseUtA9NoquW8CklGDGj4gIVKFbIywIWuEGzKIHujgaFOl6K3Shysmq6zdnsPLIOfUqQzZnb7PmX1ueDKk5kXVBrHQ3usXQ/AMzDDASzBkz0o9ldUkYMqFTjGCJPTjoJp5d8eaduWRAPGR31Tf70JjrE+kHxPL/MLeDXMpGJWuUL0PDOXWauUKSsrLum78hzMwgGVEsGWzmr9j3VJpPLK2HKA4CrOdFKTfNR+m80OHLhDD/WhtjC7+I2vQLg9dP7TMgbmUl2y/sPwvglMRwFQeA5QRcV6t82VH40vxyqMshYSfuXPJ5MzAzh4EuRZPXjLbRuZ2x69PEgcsnsqkbBHSTlvBHfftopiek2i37jd4kPZ3sp1pczjg0nN4fFbkYOYn9QEjyTLHr0TmvyCef3x3Oo6/yCvVKVUe3fPwYzIfINM51zzk7NAnRwXTA6Nz8W1akRi3+7z2Is58Q6fB83q8FRxjZVkCRRJWbDTYNoO4mymtv1Oui79agD6WAmuCf0v0VPUYRPlcc7R78smQr+ENIdEWGDuvlYEG9/KAdgqVanFeLmyjjeI5zvOtqbuHdOYN1y8WjrySPwVS5CkHHHWoH4Y=
+    rooms:
+      secure: Nc8nY1hxFJ3YlX/CqFNUYfyTMSkGosg1qg7ekCZHXH21lw/H/b32x0cK+3AWZqWejg3OLd/h5Ux74+oajlLe3xgyydqBrk543P3xt8/4MIIXxw/fnDI8TjhJNxa9Jl3OfyycIPNwzUzw8yMiXv/2C0BKnwBRqJwsORxvNqZrDOLnvlftSZhwGcpoJIdgWxq9aqQ8DTuCA/lMha237vvXuTe4crUWFFk2/9kZ3SYkkfPkhYltfV5LVdrv96PtrNovTKdhfdt/qe/d/dLb3ECsQLxqzNsgtzCL7+uSy73wQPoS1z0P3uJYptHTzwFM+zxAuDUEk3DNDnn+i2fiKypmHOI8Lhi3dC1Ef4ip0u2I8Ke9n9ikfjJsH2EGEVqNLypqE/IaFjz8Caks7nDNF30fQGU44r6zebLf+IEPqpHCes7FXDIP6DDnK0Ma3ysV7ybmw6FY5m1wZVxJgCavpNlEUfSuYogTq7NyNzp2im2JT0w6pRLlJHr67cS1VrgjWdTEaEa93ZjkIRHqb0cjbenH6IUEmJYZ5Lps5k70JVR2yBVNjwjmPJ6uTIOzZKTfsUAEDUoLPwbg+wAerZykMDwyMkSO3H78eh2vl3zAR3S6MTUKB3Bohr6I5pE8wYhoRQnIDR0nk7GUFd4RCJ9uuKr29dBuIXZ+OpXZd4b0kDOshfc=
